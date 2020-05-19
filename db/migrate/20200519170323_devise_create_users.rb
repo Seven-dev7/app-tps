@@ -15,7 +15,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :dateofbirth
       t.string :phone
       t.string :adress
-      t.string :adress
       t.string :city
 
       ## Recoverable
