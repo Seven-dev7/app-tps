@@ -5,7 +5,9 @@
 
 
 <% if user_signed_in? %>
-<%= link_to 'Se deconnecter', destroy_user_session_path, method: :delete %>
+<%= link_to 'Se deconnecter', destroy_user_session_path, method: :delete %><br>
+<%= link_to 'Profil', private_path %>
+<%= link_to 'Course', deliveries_path %>
 <%else%>
 <%= link_to 'Se connecter', new_user_session_path %><br>
 <%end%>
