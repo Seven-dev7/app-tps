@@ -8,6 +8,50 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :adress %><br />
+    <%= f.text_field :adress, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= text_field :zipcode, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :idcard %><br />
+    <%= text_field :idcard, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vitalcard %><br />
+    <%= text_field :vitalcard, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :driverlicence %><br />
+    <%= text_field :driverlicence, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.phone_field :phone, autofocus: true %>
+  </div>
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>

@@ -1,1 +1,11 @@
 <h1>Private</h1>
+
+<p>Hello <%= current_user.first_name%> <%= current_user.last_name %></p>
+
+<p> Adresse : <%= current_user.adress %> <%= current_user.zipcode %> <%= current_user.city %> </p>
+<p> Telephone : <%= current_user.phone %> </p>
+<p> N° Permis : <%= current_user.driverlicence %> </p>
+<p> N° CNI : <%= current_user.idcard %> </p>
+<p> N° Carte Vitale : <%= current_user.vitalcard %> </p>
+
+<%= link_to "Editer son profil", edit_user_registration_path %>
